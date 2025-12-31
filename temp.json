@@ -1,0 +1,12 @@
+{
+    "hosting": {
+      "public": "public",
+      "cleanUrls": true,
+      "rewrites": [
+        { "source": "/reset", "destination": "/reset.html" },
+        { "source": "/change-email", "destination": "/change-email.html" },
+        { "source": "/verify", "destination": "/verify.html" }
+      ]
+    }
+  }
+  

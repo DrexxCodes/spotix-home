@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo-128x128.png" type="image/x-icon">
+    <meta name="description"
+        content="Spotix PLC connects event bookers and users, offering seamless ticket purchasing and event management services with AI assistance.">
+
+
+    <style>
+        p {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            line-height: 10;
+            font-weight: 500;
+            color: #414040;
+        }
+
+        /* .group {
+            padding-top: 30px;
+        } */
+
+        .sub-group {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 14px;
+            color: #595959;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .sub-group-sub {
+            font-size: 14px;
+            color: #595959;
+            padding-bottom: 20px;
+        }
+
+        .big-pad {
+            padding-bottom: 60px;
+        }
+
+        li {
+            padding-bottom: 20px;
+            color: #414040;
+        }
+
+        ul {
+            padding: 20px;
+        }
+
+        .gap {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background-color: #f1efef;
+            border-radius: 8px;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #6b6767;
+        }
+
+        thead {
+            background-color: rgb(164, 51, 187);
+            color: #f1efef;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(221, 205, 221, 0.6);
+        }
+
+        th {
+            font-weight: 600;
+        }
+
+        tbody tr:active {
+            background-color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            /* table, thead, tbody, th, td, tr {
+                display: block;
+            } */
+
+            th {
+                /* position: absolute; */
+                top: -9999px;
+                left: -9999px;
+            }
+
+            td {
+                padding: 0.75rem;
+                position: relative;
+                border: 1px solid #6b6767;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+        }
+
+        /* meter::-webkit-meter-bar {
+            background:rgb(164, 51, 187);
+        }
+
+        meter {
+            background-color: #ffffff;
+            width: 200px;
+        } */
+    </style>
+    <title>Spotix PLC: Event Ticketing and Management Platform</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/parallax/jarallax.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=28tI2I">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=28tI2I" type="text/css">
+
+
+</head>
+
+<body>
+    <section data-bs-version="5.1" class="menu menu2 cid-uHI7j2s64U" once="menu" id="menu-5-uHI7j2s64U">
+
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo-128x128.png" alt="logo" style="height: 4.3rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4"
+                            href="https://mobiri.se">Spotix</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobiri.se"
+                                data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Products</a>
+                            <div class="dropdown-menu" data-bs-popper="none" aria-labelledby="dropdown-427"><a
+                                    class="text-black dropdown-item display-4" href="https://mobiri.se">Spotix Event
+                                    Booker</a><a class="text-black dropdown-item display-4"
+                                    href="https://mobiri.se">Spotix Ads</a></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link text-black text-primary dropdown-toggle display-4"
+                                href="release-notes.html" aria-expanded="false" data-toggle="dropdown-submenu"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside">Releases</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-236"><a
+                                    class="text-black text-primary dropdown-item display-4"
+                                    href="release-notes.html">User Release</a><a
+                                    class="text-black text-primary dropdown-item display-4"
+                                    href="release-notes.html">Booker Release<br></a></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link text-black text-primary display-4" href="ai-ml.html">AI &amp; ML</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <section style="padding: 20px; font-family: Arial;">
+        <h1 style="margin-top: 100px; margin-bottom: 30px; font-weight: 800;">PRIVACY POLICY</h1>
+        <p style="color: #595959;"><strong>Last Updated: May 05, 2025</strong></p>
+
+        <p style="padding-top: 40px; padding-bottom: 20px; line-height: 1.5; font-weight: 500; color: #414040;">This
+            Privacy Notice for for Spotix PLC (doing business as Spotix) ('<strong>we</strong>', '<strong>us</strong>',
+            or '<strong>our</strong>' ), describes how and why we might access, collect, store, use, and/or share (
+            '<strong>process</strong>') your personal information when you use our services (
+            '<strong>Services</strong>'), including when you:
+
+            <ul>
+                <li style="padding-bottom: 20px;">Visit our website <a href="https://www.spotix.com.ng">here</a>, or any
+                    website of ours that links to this Privacy Notice.</li>
+
+                <li style="padding-bottom: 20px;">Download and use our mobile application ( Spotix for users, Spotix for
+                    bookers, Spotix for admins) , or any other application of ours that links to this Privacy Notice.
+                </li>
+
+                <li style="padding-bottom: 20px;">Engage with us in other related ways, including any sales, marketing,
+                    or events.</li>
+
+                <li style="padding-bottom: 20px;">Use Spotix. Spotix is an innovative online platform designed to
+                    streamline the event planning and ticketing process for both event organizers and attendees. Our
+                    mission is to provide a seamless, user-friendly, and secure environment for discovering, planning,
+                    and attending events. Key features include:
+                    <ol>
+                        <li style="padding-bottom: 20px;"> <span style="color:#6b2fa5"><strong>Event Creation and
+                                    Management:</strong></span> Event planners can easily create and manage their
+                            events, including setting ticket prices, availability, and event details.</li>
+
+                        <li style="padding-bottom: 20px;"><span style="color:#6b2fa5"><strong>Ticket Purchasing and
+                                    Sales:</strong></span> Users can browse and purchase tickets for various events,
+                            with secure payment processing and instant ticket delivery.</li>
+
+                        <li style="padding-bottom: 20px;"><span style="color:#6b2fa5"><strong>Event
+                                    Discovery:</strong></span> Users can discover new events based on their interests,
+                            location, and preferences.</li>
+
+                        <li style="padding-bottom: 20px;"><span style="color:#6b2fa5"><strong>Personalized Event
+                                    Recommendations:</strong></span> Our algorithm provides personalized event
+                            recommendations to users based on their event history and preferences. </li>
+
+                        <li style="padding-bottom: 20px;"><span style="color:#6b2fa5"><strong>Real-time Event
+                                    Updates:</strong></span> Event planners can send real-time updates to attendees,
+                            ensuring everyone stays informed about event changes or cancellations.
+                        </li>
+                    </ol>
+                </li>
+
+            </ul>
+            <strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy
+            rights and choices. We are responsible for making decisions about how your personal information is
+            processed. If you do not agree with our policies and practices, please do not use our Services. If you still
+            have any questions or concerns, please contact us at support@spotix.com.ng.
+        </p>
+
+        <h2 style="margin-top: 40px;"><strong>SUMMARY OF KEY POINTS</strong></h2>
+
+        <div class="group">
+
+            <div class="sub-group">
+                This summary provides key points from our Privacy Notice, but you can find out more details about any of
+                these topics by clicking the link following each key point or by using our <a href="#toc">table of
+                    contents</a> below to
+                find the section you are looking for.
+            </div>
+
+
+
+            <div class="sub-group-sub">
+                <strong>What personal information do we process?</strong> When you visit, use, or navigate our Services,
+                we may process
+                personal information depending on how you interact with us and the Services, the choices you make, and
+                the products and features you use. Learn more about <a href="#personal-info">personal information you
+                    disclose to us</a>.
+            </div>
+
+
+            <div class="sub-group-sub">
+                <strong>Do we process any sensitive personal information?</strong> Some of the information may be
+                considered 'special' or
+                'sensitive' in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and
+                religious beliefs. We do not process sensitive personal information.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>Do we collect any information from third parties?</strong> We may collect information from
+                public databases,
+                marketing partners, social media platforms, and other outside sources. Learn more about information
+                collected from other sources.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>How do we process your information?</strong> We process your information to provide, improve,
+                and administer our
+                Services, communicate with you, for security and fraud prevention, and to comply with law. We may also
+                process your information for other purposes with your consent. We process your information only when we
+                have a valid legal reason to do so. Learn more about how we process your information.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>In what situations and with which parties do we share personal information?</strong> We may
+                share information in
+                specific situations and with specific third parties. Learn more about when and with whom we share your
+                personal information.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>How do we keep your information safe?</strong> We have adequate organisational and technical
+                processes and
+                procedures in place to protect your personal information. However, no electronic transmission over the
+                internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or
+                guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat
+                our security and improperly collect, access, steal, or modify your information. Learn more about how we
+                keep your information safe.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>What are your rights?</strong> Depnding on where you are located geographically, the applicable
+                privacy law may
+                mean you have certain rights regarding your personal information. Learn more about your privacy rights.
+            </div>
+
+            <div class="sub-group-sub">
+                <strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by visiting
+                spotix.com.ng/DSA , or by contacting us. We will consider and act upon any request in accordance with
+                applicable data protection laws.
+            </div>
+
+            <div class="big-pad sub-group-sub">Want to learn more about what we do with any information we collect? <a
+                    href="#toc">Review the Privacy Notice in full</a>.</div>
+
+        </div>
+
+        <div id="toc">
+            <h2>TABLE OF CONTENT</h2>
+            <ol>
+                <li><a href="#toc1">WHAT INFORMATION DO WE COLLECT?</a></li>
+                <li><a href="#toc2">HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+                <li><a href="#toc3">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></li>
+                <li><a href="#toc4">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+                <li><a href="#toc5">DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a></li>
+                <li><a href="#toc6">HOW DO WE HANDLE YOUR SOCIAL LOGINS?</a></li>
+                <li><a href="#toc7">IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</a></li>
+                <li><a href="#toc8">HOW LONG DO WE KEEP YOUR INFORMATION?
+                    </a></li>
+                <li><a href="#toc9">HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
+                <li><a href="#toc10">DO WE COLLECT INFORMATION FROM MINORS?</a></li>
+                <li><a href="#toc11">WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+                <li><a href="#toc12">CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+                <li><a href="#toc13">DO NIGERIAN RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+                <li><a href="#toc14">DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+                <li><a href="">WHO IS A BOOKER?</a></li>
+                <li><a href="">WHAT HAPPENS TO EVENTS OF A BOOKER AFTER THEY DELETE THEIR ACCOUNT?</a></li>
+                <li><a href="">DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+                <li><a href="">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+                <li><a href="">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
+            </ol>
+        </div>
+
+
+        <div id="toc1">
+            <h4 style="font-weight: bold;">1. WHAT INFORMATION DO WE COLLECT?</h4>
+            <p id="personal-info"><strong>Personal information you disclose to us</strong></p>
+
+            <div class="sub-group">
+                In Short: We collect personal information that you provide to us.
+            </div>
+
+
+            We collect personal information that you voluntarily provide to us when you register on the Services,
+            express an interest in obtaining information about us or our products and Services, when you participate
+            in activities on the Services, or otherwise when you contact us.
+
+
+            <p class="sub-group" style="background-color: #6b6767; color: #f1efef; width: 100%; line-height: 1.8rem;">
+                <strong>Sensitive Information:</strong> Yes we do process sensitive information which includes but not
+                limited to your address, pictures, NIN / BVN, banking information, Coporate documents etc. All personal
+                information that you provide to us must be true, complete, and accurate, and you must notify us of any
+                changes to such personal information.
+            </p>
+
+            <p><strong>Information automatically collected</strong></p>
+
+            <div class="sub-group">
+                In Short: Some information — such as your Internet Protocol (IP) address and/or browser and device
+                characteristics — is collected automatically when you visit our Services.
+            </div>
+
+            We automatically collect certain information when you visit, use, or navigate the Services. This
+            information may not reveal your specific identity (like your name or contact information) but may
+            include device and usage information, such as your IP address, browser and device characteristics,
+            operating system, language preferences, referring URLs, device name, country, location, information
+            about how and when you use our Services, and other technical information. While interacting with certain
+            third party services of Spotix such as our Telegram Bots may reveal some information about you on Telegram.
+            This information is primarily
+            needed to maintain the security and operation of our Services, and for our internal analytics and
+            reporting purposes.
+
+
+            <div class="gap">Like many businesses, we also collect information through cookies and similar
+                technologies.</div>
+
+            <p><strong>Classified Data</strong></p>
+
+            <div class="sub-group">
+                In Short: There are some specific information you upload to us that we may never allow you to access
+                again.
+            </div>
+
+            <div class="gap">
+                Classified Data is voluntarily uploaded by you to us and we usually use this for any kind of
+                verification. Data can only be classified as Classified data if it is being verified by our third party
+                companies. Data such as Credit score, BVN/NIN, Student University ID, TPBs etc. Uploading incorrect
+                classified data will probably lead to deactivation of your account pending when we delete the
+                inconsistent data.
+            </div>
+        </div>
+        <hr>
+        <div id="toc2">
+            <h4 style="font-weight: bold;">2. HOW DO WE PROCESS YOUR INFORMATION?</h4>
+
+            <div class="sub-group">
+                In Short: We process your information to provide, improve, and administer our Services, communicate with
+                you, for security and fraud prevention, and to comply with law. We may also process your information for
+                other purposes with your consent.
+            </div>
+
+            <div class="sub-group" style="font-style: normal;">
+                We process your personal information for a variety of reasons, depending on how you interact with our
+                Services, including:
+            </div>
+            <ul>
+                <li><strong>To facilitate account creation and authentication and otherwise manage user accounts:
+                    </strong>We may process your information so you can create and log in to your account, as well as
+                    keep your account in working order.</li>
+                <li><strong>To advance user roles: </strong>We may process your information manually or automated means
+                    to advance your user roles in Spotix to allow you access to more services</li>
+                <li><strong>To provide identity authenticity: </strong>We may process your information to verify
+                    authenticity of individuals making use of our Services</li>
+                <li><strong>To get analytics: </strong>We may process your information while gathering analytics of
+                    users using our product.</li>
+                <li><strong>Initiating Payouts: </strong>We may request for some information to process payouts. Please
+                    note that we will only request for information that pertains to payout of a particular service and
+                    we only make such requests from our official in bound platforms</li>
+                <li><strong>To save or protect an individual's vital interest: </strong>We may process your information
+                    when necessary to save or protect an individual’s vital interest, such as to prevent harm.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="toc3">
+            <h4 style="font-weight: bold;">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</h4>
+            <div class="sub-group">
+                In Short: We only process your personal information when we believe it is necessary and we have a valid
+                legal reason (i.e. legal basis) to do so under applicable law, like with your consent, to comply with
+                laws, to provide you with services to enter into or fulfil our contractual obligations, to protect your
+                rights, or to fulfil our legitimate business interests.
+            </div>
+
+            <div class="sub-group"><u>If you are located in the EU or UK, this section applies to you.</u></div>
+
+            The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we
+            rely on in order to process your personal information. As such, we may rely on the following legal bases to
+            process your personal information:
+
+            <ul>
+                <li><strong>Consent:</strong> We may process your information if you have given us permission (i.e.
+                    consent) to use your personal information for a specific purpose. You can withdraw your consent at
+                    any time. Learn more about withdrawing your consent.</li>
+                <li><strong>Legal Obligations:</strong> We may process your information where we believe it is necessary
+                    for compliance with our legal obligations, such as to cooperate with a law enforcement body or
+                    regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in
+                    litigation in which we are involved.</li>
+                <li><strong>Vital Interests:</strong> We may process your information where we believe it is necessary
+                    to protect your vital interests or the vital interests of a third party, such as situations
+                    involving potential threats to the safety of any person.</li>
+            </ul>
+
+            <div class="sub-group"><u>If you are located in Nigeria or any AU state, this section applies to you.</u>
+            </div>
+            We may process your information if you have given us specific permission (i.e. express consent) to use your
+            personal information for a specific purpose, or in situations where your permission can be inferred (i.e.
+            implied consent). You can withdraw your consent at any time.
+
+            <div>In some exceptional cases, we may be legally permitted under applicable law to process your information
+                without your consent, including, for example:
+            </div>
+            <ul>
+                <li>If collection is clearly in the interests of an individual and consent cannot be obtained in a
+                    timely way.</li>
+                <li>For investigations and fraud detection and prevention.</li>
+                <li>For business transactions provided certain conditions are met.</li>
+                <li>If it is contained in a witness statement and the collection is necessary to assess, process, or
+                    settle an insurance claim.</li>
+                <li>For identifying injured, ill, or deceased persons and communicating with next of kin.</li>
+                <li>If we have reasonable grounds to believe an individual has been, is, or may be victim of financial
+                    abuse.</li>
+                <li>If it is reasonable to expect collection and use with consent would compromise the availability or
+                    the accuracy of the information and the collection is reasonable for purposes related to
+                    investigating a breach of an agreement or a contravention of the laws of Nigeria or an AU state.
+                </li>
+                <li>If disclosure is required to comply with a subpoena, warrant, court order, or rules of the court
+                    relating to the production of records.</li>
+                <li>If it was produced by an individual in the course of their employment, business, or profession and
+                    the collection is consistent with the purposes for which the information was produced.</li>
+                <li>If the information is publicly available and is specified by the regulations.</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="toc4">
+            <h4 style="font-weight: bold;">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h4>
+            <div class="sub-group">
+                In Short: We may share information in specific situations described in this section and/or with the
+                following third parties.
+            </div>
+            We may need to share your personal information in the following situations:
+            <ul>
+                <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with,
+                    or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a
+                    portion of our business to another company.</li>
+                <li><strong>Affiliates:</strong> We may share your information with our affiliates, in which case we
+                    will require those affiliates to honour this Privacy Notice. Affiliates include other products
+                    offered by Spotix and any subsidiaries of that product or current product, joint venture partners,
+                    or other companies that we control or that are under common control with us.</li>
+                <li><strong>Business Partners:</strong> We may share your information with our business partners to
+                    offer you certain products, services, or promotions. Such as any of our payment partners, designated
+                    logistics team or bookers whom may have access to specific user data.</li>
+                <li><strong>Offer Wall: </strong> Our application(s) may display a third-party hosted 'offer wall'. Such
+                    an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to
+                    users in return for the acceptance and completion of an advertisement offer. Such an offer wall may
+                    appear in our application(s) and be displayed to you based on certain data, such as your geographic
+                    area or demographic information. When you click on an offer wall, you will be brought to an external
+                    website belonging to other persons and will leave our application(s). A unique identifier, such as
+                    your user ID, will be shared with the offer wall provider in order to prevent fraud and properly
+                    credit your account with the relevant reward.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h4 style="font-weight: bold;">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h4>
+        <div class="sub-group">
+            In Short: We may use cookies and other tracking technologies to collect and store your information.
+        </div>
+
+        <div style="margin-bottom: 20px; padding: 10px;">
+            We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information
+            when you interact with our Services. Some online tracking technologies help us maintain the security of our
+            Services and your account , prevent crashes, fix bugs, save your preferences, and assist with basic site
+            functions.
+        </div>
+
+        <div style="margin-bottom: 20px; padding: 10px;">
+            Spotix also has inherent analytics system which allows us to monitor certain activities. Spotix ads unit
+            allows us to monitor how our ads are interacted with both on Spotix and any third party service where our
+            ads are shown which is governed by this clause. We may also use Spotix tracking systems to monitor how you
+            interact with events on the platform for preference management and booker analytics.
+        </div>
+
+        <div style="margin-bottom: 20px; padding: 10px;">
+            To the extent these online tracking technologies are deemed to be a 'sale'/'sharing' (which includes
+            targeted advertising, as defined under the applicable laws) under applicable US state laws, you can opt out
+            of these online tracking technologies by submitting a request as described below under section ' DO NIGERIAN
+            RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS? '
+        </div>
+
+        <div style="margin-bottom: 20px; padding: 10px;">
+            Specific information about how we use such technologies and how you can refuse certain cookies is set out in
+            our
+            Cookie Notice .
+        </div>
+
+        <hr>
+        <div id="toc6">
+            <h4 style="font-weight: bold;">6. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h4>
+            <div class="sub-group">
+                In Short: If any of our products supports social login and you choose to register or log in to our
+                Services using a social media account, we may have access to certain information about you.
+            </div>
+
+            <div style="margin-bottom: 20px; padding: 10px;">
+                Our Services offer you the ability to register and log in using your third-party social media account
+                details (like your Facebook or X logins). Where you choose to do this, we will receive certain profile
+                information about you from your social media provider. The profile information we receive may vary
+                depending on the social media provider concerned, but will often include your name, email address,
+                friends list, and profile picture, as well as other information you choose to make public on such a
+                social media platform.
+            </div>
+            <div style="margin-bottom: 20px; padding: 10px;">
+                We will use the information we receive only for the purposes that are described in this Privacy Notice
+                or that are otherwise made clear to you on the relevant Services. Please note that we do not control,
+                and are not responsible for, other uses of your personal information by your third-party social media
+                provider. We recommend that you review their privacy notice to understand how they collect, use, and
+                share your personal information, and how you can set your privacy preferences on their sites and apps.
+            </div>
+            <hr>
+            <div id="toc7">
+                <h4 style="font-weight: bold;">7. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h4>
+                <div class="sub-group">
+                    In Short: We may transfer, store, and process your information in countries other than your own.
+                </div>
+
+                <div style="margin-bottom: 20px; padding: 10px;">
+                    Our servers are located in Nigeria (Anambra[Central]) and United States (California & Rhode Island).
+                    If you are accessing our Services from
+                    outside Nigeria and United States, please be aware that your information may be transferred to,
+                    stored by, and processed by us in our facilities and in the facilities of the third parties with
+                    whom we may share your personal information (see ' <a href="#toc4">WHEN AND WITH WHOM DO WE SHARE
+                        YOUR PERSONAL INFORMATION?</a> ' above), in Nigeria, United States, and other countries.
+                </div>
+
+                <div style="margin-bottom: 20px; padding: 10px;">
+                    If you are a resident in the European Economic Area (EEA), United Kingdom (UK), or Switzerland, then
+                    these countries may not necessarily have data protection laws or other similar laws as comprehensive
+                    as those in your country. However, we will take all necessary measures to protect your personal
+                    information in accordance with this Privacy Notice and applicable law.
+                </div>
+
+                <div style="margin-bottom: 20px; padding: 10px;">European Commission's Standard Contractual Clauses:
+                </div>
+
+                <div style="margin-bottom: 20px; padding: 10px;">We have implemented measures to protect your personal
+                    information, including by using the European
+                    Commission's Standard Contractual Clauses for transfers of personal information between our group
+                    companies and between us and our third-party providers. These clauses require all recipients to
+                    protect all personal information that they process originating from the EEA or UK in accordance with
+                    European data protection laws and regulations. Our Standard Contractual Clauses can be provided upon
+                    request. We have implemented similar appropriate safeguards with our third-party service providers
+                    and partners and further details can be provided upon request.</div>
+                <hr>
+                <div id="toc8">
+                    <h4 style="font-weight: bold;">8. HOW LONG DO WE KEEP YOUR INFORMATION?</h4>
+                    <div class="sub-group">
+                        In Short: We keep your information for as long as necessary to fulfil the purposes outlined in
+                        this Privacy Notice unless otherwise required by law.
+                    </div>
+                    <div class="gap">We will only keep your personal information for as long as it is necessary for the
+                        purposes set out in this Privacy Notice, unless a longer retention period is required or
+                        permitted by law (such as tax, accounting, or other legal requirements). No purpose in this
+                        notice will require us keeping your personal information for longer than the period of time in
+                        which users have an account with us.</div>
+
+                    <div class="gap">When we have no ongoing legitimate business need to process your personal
+                        information, we will either delete or anonymise such information, or, if this is not possible
+                        (for example, because your personal information has been stored in backup archives), then we
+                        will securely store your personal information and isolate it from any further processing until
+                        deletion is possible.</div>
+                    <hr>
+                    <div id="toc9">
+                        <h4 style="font-weight: bold;">9. HOW DO WE KEEP YOUR INFORMATION SAFE?</h4>
+                    </div>
+                    <div class="sub-group">
+                        In Short: We aim to protect your personal information through a system of organisational and
+                        technical security measures.
+                    </div>
+                    <div class="gap">
+                        We have implemented appropriate and reasonable technical and organisational security
+                        measures designed to protect the security of any personal information we process. However,
+                        despite our safeguards and efforts to secure your information, no electronic transmission
+                        over the Internet or information storage technology can be guaranteed to be 100% secure, so
+                        we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third
+                        parties will not be able to defeat our security and improperly collect, access, steal, or
+                        modify your information. Although we will do our best to protect your personal information,
+                        transmission of personal information to and from our Services is at your own risk. You
+                        should only access the Services within a secure environment.
+                    </div>
+
+                    <div class="gap">
+                        On our own end however, we have strict rules guarding use and access of data within our
+                        database. All third party partners who wish to access our data have to authenticate and
+                        re-authenticate themselves in our network before they can access our data. We constantly try
+                        to evolve our Cybersecurity provisions and we have persistent anti penetration testing
+                        methods to ensure smooth operation of our products. Additionally, we don't allow rooted
+                        devices use our apps and we ensure that we only serve users over a HTTPS network.
+
+                        <hr>
+                        <div id="toc10">
+                            <h4 style="font-weight: bold;">10. DO WE COLLECT INFORMATION FROM MINORS?</h4>
+                            <div class="sub-group">
+                                In Short: We do not knowingly collect data from or market to children <u>under 18
+                                    years</u> of age .
+                            </div>
+                            <div class="gap">
+                                We do not knowingly collect, solicit data from, or market to children under 18 years of
+                                age, nor do we knowingly sell such personal information. By using the Services, you
+                                represent that you are at least 18 or that you are the parent or guardian of such a
+                                minor and consent to such minor dependent’s use of the Services. If we learn that
+                                personal information from users less than 18 years of age has been collected, we will
+                                deactivate the account and take reasonable measures to promptly delete such data from
+                                our records. If you become aware of any data we may have collected from children under
+                                age 18, please contact us at <a href="support@spotix.com.ng">support@spotix.com.ng</a>
+                                or make a report of an event posted by individuals less than 18 years to our Telegram
+                                Bot.</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div id="toc11">
+                            <h4 style="font-weight: bold;">11. WHAT ARE YOUR PRIVACY RIGHTS?</h4>
+                            <div class="sub-group">
+                                Depending on your state of residence in Nigeria, AU states, The US or in some regions,
+                                such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada ,
+                                you have rights that allow you greater access to and control over your personal
+                                information. You may review, change, or terminate your account at any time, depending on
+                                your country, province, or state of residence.
+                            </div>
+
+                            <div class="gap">
+                                In some regions (like the EEA, UK, Switzerland, and Canada ), you have certain rights
+                                under applicable data protection laws. These may include the right (i) to request access
+                                and obtain a copy of your personal information, (ii) to request rectification or
+                                erasure; (iii) to restrict the processing of your personal information; (iv) if
+                                applicable, to data portability; and (v) not to be subject to automated decision-making.
+                                In certain circumstances, you may also have the right to object to the processing of
+                                your personal information. You can make such a request by contacting us by using the
+                                contact details provided in the section ' HOW CAN YOU CONTACT US ABOUT THIS NOTICE? '
+                                below.
+                            </div>
+
+                            <div class="gap">
+                                We will consider and act upon any request in accordance with applicable data protection
+                                laws.
+                            </div>
+
+                            <div class="gap">
+                                If you are located in the EEA or UK and you believe we are unlawfully processing your
+                                personal information, you also have the right to complain to your <a
+                                    href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">Member
+                                    State data protection authority</a> or <a
+                                    href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/">UK
+                                    data protection authority.</a>
+                            </div>
+
+                            <div class="gap">
+                                If you are located in Switzerland, you may contact the <a
+                                    href="https://www.edoeb.admin.ch/edoeb/en/home.html">Federal Data Protection and
+                                    Information Commissioner</a>.
+                            </div>
+
+                            <div class="gap">
+                                <span><u><strong>Withdrawing your consent:</strong></u></span> If we are relying on your
+                                consent to process your personal information, which may be express and/or implied
+                                consent depending on the applicable law, you have the right to withdraw your consent at
+                                any time. You can withdraw your consent at any time by contacting us by using the
+                                contact details provided in the section ' HOW CAN YOU CONTACT US ABOUT THIS NOTICE? '
+                                below or updating your preferences .
+                            </div>
+
+                            <div class="gap">
+                                However, please note that this will not affect the lawfulness of the processing before
+                                its withdrawal nor, when applicable law allows, will it affect the processing of your
+                                personal information conducted in reliance on lawful processing grounds other than
+                                consent.
+                            </div>
+
+                            <h4 style="font-weight: bold;">Account Information</h4>
+                            <div class="gap">
+                                If you would at any time like to review or change the information in your account or
+                                terminate your account, you can:
+                            </div>
+
+                            <li>Log in to your account settings and update your user account.</li>
+
+                            <div class="gap">
+                                Upon your request to terminate your account, we will deactivate or delete your account
+                                and information from our active databases. However, we may retain some information in
+                                our files to prevent fraud, troubleshoot problems, assist with any investigations,
+                                enforce our legal terms and/or comply with applicable legal requirements.
+                            </div>
+
+                            <div class="gap">
+                                <span><u><strong>Cookies and similar technologies:</strong></u></span> Most Web browsers
+                                are set to accept cookies by default. If you prefer, you can usually choose to set your
+                                browser to remove cookies and to reject cookies. If you choose to remove cookies or
+                                reject cookies, this could affect certain features or services of our Services.
+                            </div>
+
+                            <div class="gap">
+                                If you have questions or comments about your privacy rights, you may email us at
+                                support@spotix.com.ng .
+
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <div id="toc12">
+                            <h4 style="font-weight: bold;">12. CONTROLS FOR DO-NOT-TRACK FEATURES</h4>
+
+                            <div class="gap">Most web browsers and some mobile operating systems and mobile applications
+                                include a Do-Not-Track ( 'DNT' ) feature or setting you can activate to signal your
+                                privacy preference not to have data about your online browsing activities monitored and
+                                collected. At this stage, no uniform technology standard for recognising and
+                                implementing DNT signals has been finalised . As such, we do not currently respond to
+                                DNT browser signals or any other mechanism that automatically communicates your choice
+                                not to be tracked online. If a standard for online tracking is adopted that we must
+                                follow in the future, we will inform you about that practice in a revised version of
+                                this Privacy Notice.</div>
+
+                            <div class="gap">California law requires us to let you know how we respond to web browser
+                                DNT signals. Because there currently is not an industry or legal standard for
+                                recognising or honouring DNT signals, we do not respond to them at this time.</div>
+                        </div>
+                        <hr>
+
+
+                        <div id="toc13">
+                            <h4 style="font-weight: bold;">13. DO NIGERIAN RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h4>
+                            <div class="sub-group">
+                                In Short: If you are a resident of California, Colorado, Connecticut, Delaware, Florida,
+                                Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New
+                                Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have the
+                                right to request access to and receive details about the personal information we
+                                maintain about you and how we have processed it, correct inaccuracies, get a copy of, or
+                                delete your personal information. You may also have the right to withdraw your consent
+                                to our processing of your personal information. These rights may be limited in some
+                                circumstances by applicable law. More information is provided below.
+                            </div>
+
+                            <h5 style="font-weight: bold;">Categories of Personal Information We Collect</h5>
+                            <div class="gap">We have collected the following categories of personal information in the
+                                past twelve (12) months:</div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Categories</th>
+                                        <th>Examples</th>
+                                        <th>Collected</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A. Identifiers</td>
+                                        <td>
+                                            Contact details, such as real name, alias, postal address, telephone or
+                                            mobile contact number, unique personal identifier, online identifier,
+                                            Internet Protocol address, email address, and account name</td>
+                                        <td>YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B. Personal information as defined in the Nigerian Customer Records statute
+                                        </td>
+                                        <td>
+                                            Name, contact information, education, employment, employment history, and
+                                            financial information</td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C. Protected classification characteristics under state or federal law</td>
+                                        <td>Gender, age, date of birth, race and ethnicity, national origin, marital
+                                            status, and other demographic data</td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>D. Commercial information</td>
+                                        <td>
+                                            Transaction information, purchase history, financial details, and payment
+                                            information</td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E. Biometric information</td>
+                                        <td>
+                                            Fingerprints and voiceprints</td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F. Internet or other similar network activity</td>
+                                        <td>Browsing history, search history, online behaviour, interest data, and
+                                            interactions with our and other websites, applications, systems, and
+                                            advertisements</td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>G. Geolocation data</td>
+                                        <td>Device location
+                                        </td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>H. Audio, electronic, sensory, or similar information
+                                        </td>
+                                        <td>Images and audio, video or call recordings created in connection with our
+                                            business activities
+                                        </td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I. Professional or employment-related information
+                                        </td>
+                                        <td>Business contact details in order to provide you our Services at a business
+                                            level or job title, work history, and professional qualifications if you
+                                            apply for a job with us
+                                        </td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>J. Education Information
+                                        </td>
+                                        <td>Student records and directory information
+                                        </td>
+                                        <td>item</td>
+                                    </tr>
+                                    <tr>
+                                        <td>K. Inferences drawn from collected personal information
+                                        </td>
+                                        <td>Inferences drawn from any of the collected personal information listed above
+                                            to create a profile or summary about, for example, an individual’s
+                                            preferences and characteristics
+                                        </td>
+                                        <td>item</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="gap">
+                                We may also collect other personal information outside of these categories through
+                                instances where you interact with us in person, online, or by phone or mail in the
+                                context of:
+                            </div>
+                            <ul>
+                                <li>Receiving help through our customer support channels;</li>
+                                <li>Participation in customer surveys or contests; and</li>
+                                <li>Facilitation in the delivery of our Services and to respond to your inquiries.</li>
+                            </ul>
+
+                            <div class="gap">We will use all items we collect in the above categories as long as the
+                                user has an account with us. We may use your personal information for our own business
+                                purposes, such as for undertaking internal research for technological development and
+                                demonstration. This is <strong>not</strong> considered to be 'selling' of your personal
+                                information.</div>
+
+                            <h4 style="font-weight: bold;">Your Rights</h4>
+                            You have rights under certain Nigerian data protection laws. However, these rights are not
+                            absolute, and in certain cases, we may decline your request as permitted by law. These
+                            rights include:
+                            <ul>
+                                <li>Right to know whether or not we are processing your personal data: We may not
+                                    disclose if we are processing some type of data such as in-app wallet data.</li>
+                                <li>Right to access your personal data: Certain information such as all data uploaded
+                                    for a verification process (Classified Data) will not be included for your review
+                                    once sent.
+                                </li>
+                                <li>Right to correct inaccuracies in your personal data: When we process certain data
+                                    like classified data, inaccurate or inconsistent uploads will not be corrected.
+                                </li>
+                                <li>Right to request the deletion of your personal data: We may withold your personal
+                                    data especially those termed as classified
+                                </li>
+                                <li>Right to obtain a copy of the personal data you previously shared with us: We may
+                                    not share your classified data even with you again.
+                                </li>
+                                <li>Right to opt out of the processing of your personal data if it is used for targeted
+                                    advertising, the sale of personal data, or profiling in furtherance of decisions
+                                    that produce legal or similarly significant effects ('profiling'): We may use your
+                                    personal data with a Spotix product or any third party partner to serve you
+                                    targetted recommendations in our products which you can't opt out.
+                                </li>
+                            </ul>
+
+                            <h4 style="font-weight: bold;">Request Verification for Personal Data</h4>
+
+                            <div class="gap">
+                                Upon receiving your request, we will need to verify your identity to determine you are
+                                the same person about whom we have the information in our system. We will only use
+                                personal information provided in your request to verify your identity or authority to
+                                make the request. However, if we cannot verify your identity from the information
+                                already maintained by us, we may request that you provide additional information for the
+                                purposes of verifying your identity and for security or fraud-prevention purposes.
+                            </div>
+
+                            <div class="gap">
+                                If you submit the request through an authorised agent, we may need to collect additional
+                                information to verify your identity before processing your request and the agent will
+                                need to provide a written and signed permission from you to submit such request on your
+                                behalf.
+
+                            </div>
+
+
+                        </div>
+                        <hr>
+
+
+                        <div id="toc14">
+                            <h4 style="font-weight: bold;">14. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</h4>
+                            <div class="sub-group">
+                                In Short: You may have additional rights based on the country you reside in.
+                            </div>
+                            <h6><strong>REPUBLIC OF SOUTH AFRICA</strong></h6>
+                            <div class="gap">
+                                At any time, you have the right to request access to or correction of your personal
+                                information. You can make such a request by contacting us by using the contact details
+                                provided in the section 'HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM
+                                YOU?'
+                                </div>
+
+                                <div class="gap">
+                                If you are unsatisfied with the manner in which we address any complaint with regard to
+                                our processing of personal information, you can contact the office of the regulator, the
+                                details of which are:
+                            </div>
+
+                            <div class="gap">
+                                <a href="https://inforegulator.org.za/">The Information Regulator (South Africa)</a><br>
+                                General enquiries: <a href="mailto:enquiries@inforegulator.org.za">enquiries@inforegulator.org.za</a><br>
+                                Complaints (complete POPIA/PAIA form 5): <a href="mailto:PAIAComplaints@inforegulator.org.za">PAIAComplaints@inforegulator.org.za</a> &
+                                <a href="mailto:POPIAComplaints@inforegulator.org.za">POPIAComplaints@inforegulator.org.za</a>
+                            </div>
+                            </div>
+                        </div>
+                        <hr>
+
+
+
+                        <div id=" ">
+                            <h4 style="font-weight: bold;">10. DO WE COLLECT INFORMATION FROM MINORS?</h4>
+                            <div class="sub-group">
+                                In Short: We do not knowingly collect data from or market to children <u>under 18
+                                    years</u> of age .
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+
+
+                        <div id=" ">
+                            <h4 style="font-weight: bold;">10. DO WE COLLECT INFORMATION FROM MINORS?</h4>
+                            <div class="sub-group">
+                                In Short: We do not knowingly collect data from or market to children <u>under 18
+                                    years</u> of age .
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+
+                        <div id=" ">
+                            <h4 style="font-weight: bold;">10. DO WE COLLECT INFORMATION FROM MINORS?</h4>
+                            <div class="sub-group">
+                                In Short: We do not knowingly collect data from or market to children <u>under 18
+                                    years</u> of age .
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+
+
+                        <div id=" ">
+                            <h4 style="font-weight: bold;">10. DO WE COLLECT INFORMATION FROM MINORS?</h4>
+                            <div class="sub-group">
+                                In Short: We do not knowingly collect data from or market to children <u>under 18
+                                    years</u> of age .
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- <meter  value="60" min="0" max="100">60%</meter> -->
+
+
+    </section>
+
+    <section data-bs-version="5.1" class="footer4 cid-uHIqDFBzLy" once="footers" id="footer4-0">
+
+        <div class="container">
+            <div class="row mbr-white">
+                <div class="col-6 col-lg-3">
+                    <div class="media-wrap col-md-8 col-12">
+                        <a href="index.html">
+                            <img src="assets/images/logo-removebg-preview-452x452.png" alt="footer">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>About</strong>
+                    </h5>
+                    <p class="mbr-text mbr-fonts-style mb-4 display-4">
+                        At Spotix PLC, we’re not just another SaaS platform; we’re the ultimate matchmaking service for
+                        events!</p>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+                        <strong>We're Social</strong></h5>
+                    <div class="social-row display-7">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-facebook"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-twitter"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-instagram"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon-snapchat socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Quick Links</strong></h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap"><a href="https://spotix.com.ng/home" class="text-primary"
+                                target="_blank">Event Home</a></li>
+                        <li class="mbr-text item-wrap"><a href="https://spotix.com.ng/login" class="text-primary"
+                                target="_blank">User Login</a></li>
+                        <li class="mbr-text item-wrap"><a href="https://spotix.com.ng/loginbooker" class="text-primary"
+                                target="_blank">Booker Login</a></li>
+                        <li class="mbr-text item-wrap">Spotix Blog</li>
+                        <li class="mbr-text item-wrap">Careers</li>
+                        <li class="mbr-text item-wrap"><a href="release-notes.html" class="text-primary">Release
+                                Note</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Legal &amp; Products</strong></h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap"><a href="https://spotix.com.ng" class="text-primary"
+                                target="_blank">Spotix Event Hub</a></li>
+                        <li class="mbr-text item-wrap"><a href="spotix-ads.html" class="text-primary"
+                                target="_blank">Spotix API</a></li>
+                        <li class="mbr-text item-wrap"><a href="ai-ml.html" class="text-primary">AI &amp; ML</a></li>
+                        <li class="mbr-text item-wrap">Privacy Policy</li>
+                        <li class="mbr-text item-wrap">Bookers Agreement</li>
+                        <li class="mbr-text item-wrap"><a href="acceptable-usage.html" class="text-primary"
+                                target="_blank">Terms Of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-4">
+                    <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7">
+                        © 2025 Spotix PLC. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/parallax/jarallax.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/vimeoplayer/player.js"></script>
+    <script src="assets/scrollgallery/scroll-gallery.js"></script>
+    <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+</body>
+
+</html>
